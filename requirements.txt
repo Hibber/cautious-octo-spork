@@ -1,0 +1,7 @@
+# Mobile Forensic Tool Requirements
+# Python 3.7+
+
+# No additional Python packages required for core functionality
+# External dependencies:
+# - Android: Android Debug Bridge (ADB)
+# - iOS: libimobiledevice tools (ideviceinfo, idevice_id, idevicepair, etc.)

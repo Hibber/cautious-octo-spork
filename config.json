@@ -1,0 +1,38 @@
+{
+  "tool_name": "Mobile Forensic Tool",
+  "version": "1.0.0",
+  "supported_platforms": ["android", "ios"],
+  "android": {
+    "required_tools": ["adb"],
+    "bypass_methods": [
+      "check_unlock_status",
+      "lock_file_removal",
+      "adb_input_commands"
+    ],
+    "data_extraction": [
+      "device_info",
+      "installed_packages",
+      "logcat"
+    ]
+  },
+  "ios": {
+    "required_tools": ["ideviceinfo", "idevice_id", "idevicepair"],
+    "bypass_methods": [
+      "check_pair_status",
+      "backup_extraction",
+      "emergency_interface"
+    ],
+    "data_extraction": [
+      "device_info",
+      "installed_apps",
+      "syslog"
+    ]
+  },
+  "output": {
+    "default_directory": "./forensic_output",
+    "format": "text"
+  },
+  "warnings": {
+    "legal_notice": "This tool is for authorized forensic and security testing use only. Unauthorized access to devices is illegal."
+  }
+}
